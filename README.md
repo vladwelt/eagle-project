@@ -10,10 +10,10 @@ nodejs descargar para tu plataforma y hacer una correcta instalacion
 npm -g install cordova ionic 
 
 
-Pasos paea hacer deploy
+Pasos para hacer deploy
 =======================
 
-colnar el proyecto 
+clonar el proyecto 
 
 probar con el comando 
 
