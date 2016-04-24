@@ -1,5 +1,5 @@
 angular.module('starter.controllers', [])
-
+.constant('FORECASTIO_KEY', 'cd9e0bf195c881329d9b49ff34de8224')
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {
@@ -21,8 +21,25 @@ angular.module('starter.controllers', [])
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+.controller('AccountCtrl', function($scope,$state,Weather,Cities) {
+  $scope.cities = Cities.all();
+  $scope.temperature = "0";
+  $scope.summary = "No definido";
+  $scope.windSpeed = "0";
+
+  $scope.changeCity = function(cityId) {
+    //get lat and longitude for seleted location
+    var lat  = $scope.cities[cityId].lat; //latitude
+    var lgn  = $scope.cities[cityId].lgn; //longitude
+    var city = $scope.cities[cityId].name; //city name
+    Weather.getCurrentWeather(lat,lgn).then(function(resp) {
+      $scope.temperature = resp.data.currently.apparentTemperature;
+      $scope.summary = resp.data.currently.summary;
+      $scope.windSpeed = resp.data.currently.windSpeed;
+    }, function(error) {
+      alert('Unable to get current conditions');
+      console.error(error);
+    });
+  	//$state.go('tab.home');
+  }
 });

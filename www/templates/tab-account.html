@@ -5,14 +5,14 @@
     <i class="icon ion-ios-sunny"></i>
     Temperatura
     <span class="item-note">
-      45 C
+        {{ temperature }} °C
     </span>
   </a>
   <a class="item item-icon-left" href="#">
     <i class="icon ion-navicon-round"></i>
     Viento
     <span class="item-note">
-      22 m/s
+        {{ windSpeed }} m/s
     </span>
   </a>
   <a class="item item-icon-left" href="#">
@@ -26,10 +26,18 @@
     <i class="icon ion-ios-partlysunny"></i>
     Estado del cielo
     <span class="item-note">
-      Nublado
+        {{ summary }}
     </span>
   </a>
 
 </div> 
+      <h1>Select city</h1>
+        <ion-list>
+            <ion-item ng-repeat="city in cities">
+              <span href="#" ng-click="changeCity('{{city.id}}')">
+                  {{city.name}}
+              </span>
+            </ion-item>
+         </ion-list>
   </ion-content>
 </ion-view>
