@@ -1,24 +1,18 @@
-Phawariy app project, for the Nasa event.
+Create an app that will enable small drone operators to know more about specific weather parameters, local terrain and no fly zones within a five-mile radius of their GPS location.
 
-Pre-requisito
-============
+EXPLANATION
+===========
 
-tener instalado 
+We implemented a system that provides information to the user through a simple and easy to use App.
+That will provide updated information:
+Climate parameters, pictures of aerial shots with zoom capabilities, identification and restricted military areas.
+Using two one aerial drones (eagle) and a terrestrial (fox), autonomous artificial vision and additional information that we provide the web services through its API's.
+To give the driver a better user drones flying experience and above all safe. Fulfilling order to help the user avoid damaging your drone.
 
-nodejs descargar para tu plataforma y hacer una correcta instalacion 
+RESOURCES USED
+==============
 
-npm -g install cordova ionic 
-
-
-Pasos para hacer deploy
-=======================
-
-clonar el proyecto 
-
-probar con el comando 
-
-ionic serve 
-
-ingresar a tu navegador y de acuerdo al puerto X que se levanta el serve de ionic (Ej. http://localhost:8001 ) 
-tiene que mostrarse la aplicacion funcionando .
- 
+The system has the following feed means data:
+- Two autonomous drones and other air terrestrial one with artificial vision they have cameras, kinect and also have a variety of sensors such as temperature, humidity, atmospheric pressure, gyroscopes, accelerometers, GPS and ultrasonic.
+- Additional information that we provide the web services through its API's.
+The server system is mounted in the cloud and this is responsible for receiving, processing and sending the data to the app that the user will have on your mobile device.
