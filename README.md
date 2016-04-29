@@ -18,3 +18,6 @@ The system has the following feed means data:
 - Two autonomous drones and other air terrestrial one with artificial vision they have cameras, kinect and also have a variety of sensors such as temperature, humidity, atmospheric pressure, gyroscopes, accelerometers, GPS and ultrasonic.
 - Additional information that we provide the web services through its API's.
 The server system is mounted in the cloud and this is responsible for receiving, processing and sending the data to the app that the user will have on your mobile device.
+
+Machine Learning resources:
+- Air and ground drones will optanin in real time images, which will be analyzed by techniques Computer Vision and ANN (Artificial Neural Network), recognizing patterns such as trees, wires, poles, water, fire and other abnormalities, that may interfere in the air and ground exploration. For which the drones used machine learning that is responsible for detecting a visual pattern. The connections in neurons can be adjusted based on the experience acquired with time, so that neural networks capture inputs are able to learn feeding back of such skills.
