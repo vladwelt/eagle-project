@@ -1,6 +1,6 @@
 Conexion Arduino y Rapberry Pi2, envio de datos y al servidor.  
 
-![Project Eagle](https://drive.google.com/file/d/0B1G6ktZEPmhpQTZNS09WdWs0Yk0/view?usp=sharing)
+![Project Eagle](http://www.hophost.net/images/508conecion_ard_rasp_fire.png)
 
 EXPLANATION
 ===========
