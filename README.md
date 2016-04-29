@@ -1,5 +1,7 @@
 Create an app that will enable small drone operators to know more about specific weather parameters, local terrain and no fly zones within a five-mile radius of their GPS location.
 
+![Project Eagle](https://s3.amazonaws.com/files.open.nasa.gov/spaceapps/media/f8aa91d4-adde-49d4-9d19-781a5a44cdc9.png)
+
 EXPLANATION
 ===========
 
